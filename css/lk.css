@@ -1,0 +1,33 @@
+.container{
+    width: 100%;
+    display: grid;
+    grid-auto-rows: 100%;
+    grid-template-columns: 2fr 5fr;
+}
+.sidebar{
+    display: flex;
+    min-width: 350px;
+    height: 100%;
+    background-color: #2C2C2C;
+    padding-left: 52px;
+    padding-bottom: 44px;
+}
+.nameinfo{
+    padding-top: 49px;
+}
+.name{
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+}
+.address{
+    max-width: 240px;
+}
+.address_item > a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
