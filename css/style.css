@@ -88,7 +88,7 @@ body{
         width: 31px;
         height: 34px;
         display: flex;
-        padding-left: 665px;
+        padding-left: 500px;
         margin-top: -37px;
     }
    }
@@ -126,7 +126,7 @@ body{
         position: absolute;
         width: 498px;
         height: 96px;
-        left: 97px;
+        left: 9px;
         top: 190px;
         font-weight: 600;
         font-size: 36px;
@@ -344,32 +344,24 @@ body{
 }
 .img_fon>a:hover{
     font-size: 39px;
-    color: #87D9F1;
-    background-image: url(/img/Arrow.png);
-    background-repeat: no-repeat;
-     
+    color: #87D9F1;    
 }
-.small_block{
-    display: none;
+.strela{
+    width: 40px;
+    margin-left: 37px;
 }
-@media screen and(max-width: 768px){
-    .adress1, .adress2, .adress3, .adress4{
+
+@media (max-width: 576px){
+    .adress2, .adress3{
+      flex: 1;}
+    .imgs {
+      flex-direction: column;}
+    .adress4{
         display: none;
     }
-    .small_adress1{
-        background-image: url(/img/1.jpg);
-    }
-    .small_adress2{
-        background-image: url(/img/2.jpg);
-    }
-    .small_adress3{
-        background-image: url(/img/3.jpg);
-    }
-    .small_block{
-        width: 100%;
-        height: 407px;
-    }
+
 }
+
 
 /**********************CONTACTS**********************/
 .contacts{
@@ -467,6 +459,58 @@ input[type=submit]{
     letter-spacing: 0.03em;
     margin-top: 23px;
 }
+.s_contacts{
+    display: none;
+
+}
+@media screen and (max-width: 768px){
+    .contacts{
+        display: none;
+    }
+    .s_contacts{
+        width: 100%;
+        display: block;
+        background-color: #2C2C2C;
+        height: 850px;
+    }
+    .s_contBlock{
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .s_contactsText{
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding-top: 80px;
+    }
+    .s_contactsText1{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .s_form{
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .s_contact_wrapper{
+        width: 454px;
+    }
+    .s_username{
+        width: 375px;
+        left: 20px;
+    }
+    .s_comment{
+        width: 463px;
+        height: 177px;
+        left: 18px;
+    }
+}
 /**********************FOOTER**********************/
 .footer{
     width: 100%;
@@ -512,4 +556,55 @@ input[type=submit]{
     line-height: 24px;
     padding-bottom: 40px;
     padding-top: 121px;
+}
+.logotip > a, .s_col-4, .s_social{
+    display: none;
+}
+@media screen and (max-width: 768px){
+    .col-4, .social{
+        display: none;
+    }
+    .footer{
+        width: 100%;
+        height: 513px;
+    }
+    .container{
+        display: block;
+    }
+    .logotip{
+        width: 100%;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+    }
+    .logotip > a{
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: white;
+        text-decoration: none;
+        line-height: 29px;
+        padding-top: 20px;
+    }
+    .logotip > a:hover{
+        font-size: 28px;
+        color: #87D9F1;
+    }
+    .s_col-4{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 70px;
+        width: 100%;
+    }
+    .s_social{
+        display: flex;
+        justify-content: space-around;
+        width: 225px;
+        padding-top: 38px;
+    }
 }
