@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     height: 760px;
     width: 100%;
@@ -17,6 +18,20 @@ body{
     height: 100%;
     background-color: #2C2C2C;
     padding-left: 54px;
+=======
+.container{
+    width: 100%;
+    display: grid;
+    grid-auto-rows: 100%;
+    grid-template-columns: 2fr 5fr;
+}
+.sidebar{
+    display: flex;
+    min-width: 350px;
+    height: 100%;
+    background-color: #2C2C2C;
+    padding-left: 52px;
+>>>>>>> cdc67db63eced896b3955de9323a9d925ee4ad11
     padding-bottom: 44px;
 }
 .nameinfo{
@@ -29,6 +44,7 @@ body{
     padding-bottom: 10px;
     color: #FFFFFF;
 }
+<<<<<<< HEAD
 .adres{
     width: 240px;
     padding-bottom: 41.5px;
@@ -37,10 +53,17 @@ body{
     color: #2C2C2C;
 }
 .adres_item >a{
+=======
+.address{
+    max-width: 240px;
+}
+.address_item > a{
+>>>>>>> cdc67db63eced896b3955de9323a9d925ee4ad11
     text-decoration: none;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+<<<<<<< HEAD
 }
 .side_bar{  
     padding-top: 38.5px;
@@ -184,4 +207,6 @@ body{
     display: flex;
     flex-direction: row-reverse;
     padding-top: 20px;
+=======
+>>>>>>> cdc67db63eced896b3955de9323a9d925ee4ad11
 }
